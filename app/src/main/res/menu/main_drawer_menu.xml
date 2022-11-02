@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+<group android:checkableBehavior="single">
+
+    <item android:id="@+id/HomePageMenu"
+        android:icon="@drawable/homepage"
+        android:title="Homepage"
+    />
+    <item android:id="@+id/BuyCoinsMenu"
+        android:title="BuyCoins"
+        android:icon="@drawable/buy"
+        />
+
+    <item android:id="@+id/SellCoinsMenu"
+        android:title="SellCoins"
+        android:icon="@drawable/sell"
+        />
+    <item android:icon="@drawable/myaccount"
+        android:title="MyAccount"
+        android:id="@+id/MyAccountMenu"
+        />
+    <item android:id="@+id/SettingMenu"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        />
+    <item android:id="@+id/LogoutMenu"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        />
+
+
+
+
+
+
+
+
+</group>
+</menu>

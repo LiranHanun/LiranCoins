@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.whatsapp">
+
+    <uses-permission android:name="android.premission.INTERENT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="LiranCoins"
+        android:roundIcon="@drawable/litecoinlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Whatsapp">
+        <activity
+            android:name=".ActivityForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".MyCoinsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMyAccount"
+            android:exported="false" />
+        <activity
+            android:name=".MainDrawerHeader"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellCoinsAcivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyCoinsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsCoinsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitySingUp"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

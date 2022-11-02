@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636"
+    tools:context=".Homepage">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        app:srcCompat="@drawable/lirancoins" />
+
+
+    <EditText
+        android:id="@+id/idEdtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-53dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Serch Coin"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/infoname"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtSearch"
+
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="#A4A4A4" />
+
+
+    <TextView
+        android:id="@+id/infoprice"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/idEdtSearch"
+
+        android:layout_toRightOf="@+id/infoname"
+        android:text="Price"
+        android:textAlignment="center"
+        android:textColor="#A4A4A4" />
+
+    <TextView
+        android:id="@+id/infoseven"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/idEdtSearch"
+        android:layout_marginStart="4dp"
+        android:layout_toRightOf="@+id/infoprice"
+        android:text="7d"
+        android:textAlignment="center"
+        android:textColor="#A4A4A4" />
+
+
+    <TextView
+        android:id="@+id/infoone"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/idEdtSearch"
+        android:layout_marginStart="4dp"
+        android:layout_toRightOf="@+id/infoseven"
+        android:text="24h"
+        android:textAlignment="center"
+        android:textColor="#A4A4A4" />
+
+    <TextView
+        android:id="@+id/infohour"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@id/idEdtSearch"
+        android:layout_toRightOf="@+id/infoone"
+        android:text="1h"
+        android:textAlignment="center"
+        android:textColor="#A4A4A4" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVcurrencies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/infoname" />
+
+    <ProgressBar
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idPBLoading"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
